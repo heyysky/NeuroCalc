@@ -46,6 +46,10 @@ That's it. The script will:
 
 ---
 
+## Screenshot 
+<img width="1600" height="903" alt="Screenshot 2026-05-22 191929" src="https://github.com/user-attachments/assets/dcf0c9f4-24f4-430f-a13f-7b7868d5a078" />
+
+
 ## 🗂 Project Structure
 
 ```
