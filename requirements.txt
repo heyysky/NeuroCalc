@@ -1,0 +1,36 @@
+# NeuroCalc Requirements
+# CPU-only, Windows 10/11 compatible
+# Python 3.9+
+
+# ── Core Backend ──────────────────────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+pydantic==2.7.1
+
+# ── Computer Vision ───────────────────────────────────────────────────────────
+opencv-python-headless==4.9.0.80
+Pillow==10.3.0
+numpy==1.26.4
+
+# ── Math Engine ───────────────────────────────────────────────────────────────
+sympy==1.12
+
+# ── ONNX Runtime (CPU-only) ───────────────────────────────────────────────────
+onnxruntime==1.17.3
+# Note: Do NOT install onnxruntime-gpu — CPU version only
+
+# ── Database ──────────────────────────────────────────────────────────────────
+# SQLite is built into Python — no extra package needed
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.2.0
+pytest-asyncio==0.23.6
+httpx==0.27.0   # For FastAPI test client
+
+# ── Optional: Training only (not needed for inference) ────────────────────────
+# Uncomment if you want to retrain the CNN:
+# torch==2.2.2           # CPU-only: torch==2.2.2+cpu
+# torchvision==0.17.2
+# onnx==1.16.0
+# onnxruntime-tools      # For quantization
